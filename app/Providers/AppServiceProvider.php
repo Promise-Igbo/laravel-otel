@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\URL;
 use OpenTelemetry\API\Globals;
 use OpenTelemetry\API\Trace\TracerInterface;
 
