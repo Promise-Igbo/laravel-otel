@@ -11,12 +11,6 @@ server {
         try_files $uri $uri/ /index.php?$args;
     }
 
-    # NEW: serve static files directly
-    location ~* \.(?:css|js|jpg|jpeg|gif|png|svg|woff|woff2|ttf|eot)$ {
-        expires 1h;
-        add_header Cache-Control "public";
-        try_files $uri =404;
-    }
 
     location = /50x.html {
         root /html/;
